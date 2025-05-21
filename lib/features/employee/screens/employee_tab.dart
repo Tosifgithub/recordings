@@ -84,7 +84,7 @@ class _EmployeeTabState extends State<EmployeeTab> {
       body: hasError
           ? Center(child: Text(errorMessage))
           : employees.isEmpty && isLoading
-          ? const Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator(color: Color(0xff113C6D),))
           : ListView.builder(
         padding: const EdgeInsets.all(8.0),
         controller: _scrollController,
